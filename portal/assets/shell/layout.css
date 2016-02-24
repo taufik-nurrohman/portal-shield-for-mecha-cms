@@ -1,0 +1,182 @@
+pre,code {font-family:"Courier New",Courier,"Numbus Mono L",Monospace}
+pre {
+  padding:1em;
+}
+button,
+input,
+select,
+textarea,
+.btn {border:1px solid}
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.btn:active {text-decoration:none}
+.footnotes ol {font-size:86%}
+.footnotes p {margin:0}
+.blog-wrapper {
+  max-width:116.36363636363636em;
+  margin:0 auto;
+  position:relative;
+}
+.blog-header {padding:2em 2em 4em}
+.blog-header .widget-search {
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+  padding:1em;
+}
+.blog-header .widget-search form {margin:0}
+.blog-header .widget-search input,
+.blog-header .widget-search button {
+  border-width:0;
+}
+.blog-slogan {margin:0}
+.blog-navigation {
+  height:2em;
+  line-height:2em;
+  border-bottom:1px solid;
+  margin-top:-2em;
+}
+.blog-navigation ul,
+.blog-navigation li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.blog-navigation li {
+  float:left;
+  display:inline;
+  margin:0 .5em;
+}
+.blog-navigation li + li {margin-left:0}
+.blog-navigation a {
+  display:block;
+  padding:0 .8em;
+}
+.blog-navigation ul ul {display:none}
+.blog-content {
+  overflow:hidden;
+}
+.blog-sidebar {
+  width:20em;
+  float:left;
+}
+.blog-sidebar-right {float:right}
+.blog-main {
+  margin:0 20em;
+  padding:1em;
+  border-bottom:4px solid;
+  overflow:hidden;
+}
+.blog-main a:focus,
+.blog-main a:hover {text-decoration:underline}
+.blog-main .btn:focus,
+.blog-main .btn:hover {text-decoration:none}
+.blog-sidebar .widget {margin:0}
+.blog-sidebar .widget-title {
+  font:inherit;
+  font-weight:bold;
+  margin:0;
+  padding:.5em 1em;
+}
+.blog-sidebar .widget ul,
+.blog-sidebar .widget ol,
+.blog-sidebar .widget li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.blog-sidebar .widget li {
+  padding:.2em .6em;
+  border-top:1px solid;
+}
+.blog-sidebar .widget li:first-child {border-top:0}
+.blog-sidebar .widget-archive-hierarchy {padding:1em}
+.blog-sidebar .widget-archive-hierarchy li {
+  border:0;
+  padding:0;
+}
+.blog-sidebar .widget-archive-hierarchy li li {
+  margin-left:1.2em;
+}
+.blog-footer {
+  padding:1em 1.5em;
+  overflow:hidden;
+}
+.blog-pager {
+  margin:2em 1em;
+  text-align:center;
+  overflow:hidden;
+}
+.blog-pager-prev {float:left}
+.blog-pager-next {float:right}
+.comments-body,
+.comments-body li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.comment-header {overflow:hidden}
+.comment-name {
+  font:inherit;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  float:left;
+}
+.comment-time {
+  float:right;
+}
+.comment-form {margin:2em 0}
+.comment-form input[name="math"] {width:4em}
+.blog-footer-grid-group {
+  padding:1em 0;
+  overflow:hidden;
+}
+.blog-footer-grid {
+  float:left;
+  width:25%;
+}
+.blog-footer-grid .widget-wrapper {margin:0 1em}
+.blog-footer-left {float:left}
+.blog-footer-right {float:right}
+.post-image {
+  display:block;
+  float:left;
+  width:7em;
+  height:7em;
+  margin:0 1em 1em 0;
+  overflow:hidden;
+}
+.post-image img {
+  max-width:none;
+  max-height:none;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  border:0;
+  outline:0;
+  border-radius:0;
+}
+.post-time {
+  padding:.5em 1em;
+  margin-right:-1em;
+  margin-left:-1em;
+}
+.post:first-child .post-time {margin-top:-1em}
+.post-footer {
+  border-top:1px solid;
+  margin:0 -.8em .2em;
+  padding:1em;
+  clear:both;
+}
+.btn.fi-link {float:right}
+@media (max-width:1024px) {
+  .blog-sidebar {width:15em}
+  .blog-main {margin:0 15em}
+}

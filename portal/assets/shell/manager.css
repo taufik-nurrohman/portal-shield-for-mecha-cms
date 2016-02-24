@@ -1,0 +1,13 @@
+.widget-manager-bar {
+  margin:0;
+  padding:0;
+  top:.4em;
+  right:23em;
+}
+.tab-button,
+.tab-button:before,
+.tab-button:after,
+.sortable {
+  font-weight:normal;
+  text-decoration:none !important;
+}

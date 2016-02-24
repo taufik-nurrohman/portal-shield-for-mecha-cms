@@ -1,0 +1,7 @@
+shield_portal:
+  title:
+    palette: Palettes
+    font_1: Body Font
+    font_2: Title Font
+    text_size_1: Text Size
+    text_size_2: Main Text Size
