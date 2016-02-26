@@ -5,7 +5,7 @@
       'content' => Widget::manager()
   )); ?>
   <?php endif; ?>
-  <?php if( ! $manager): ?>
+  <?php if($config->page_type !== 'manager'): ?>
   <?php Shield::chunk('block.widget', array(
       'title' => $speak->widget->recent_posts,
       'content' => Widget::recentPost()

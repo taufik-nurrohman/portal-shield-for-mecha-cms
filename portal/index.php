@@ -7,6 +7,11 @@
     <?php Shield::chunk('article.header.index'); ?>
     <figure class="post-image">
       <?php if($article->image): ?>
+      <?php if(Plugin::exist('thumbnail')): ?>
+      <?php $s = (array) $config->states->shield->font_size; ?>
+      <?php $s = round($s[0] * 7); ?>
+      <?php $article->image = str_replace(File::url(ASSET) . '/', $config->url . '/t/' . $s . '/' . $s . '/', $article->image); ?>
+      <?php endif; ?>
       <?php echo Asset::image($article->image, ' alt=""'); ?>
       <?php endif; ?>
     </figure>

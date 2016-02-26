@@ -1,5 +1,5 @@
 <aside class="blog-sidebar blog-sidebar-right widgets">
-  <?php if( ! $manager): ?>
+  <?php if($config->page_type !== 'manager'): ?>
   <?php Shield::chunk('block.widget', array(
       'title' => $speak->widget->related_posts,
       'content' => Widget::relatedPost()

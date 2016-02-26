@@ -1,4 +1,5 @@
       </div> <!-- .blog-content -->
+      <?php Shield::chunk('block.footer.grid'); ?>
       <?php Shield::chunk('block.footer'); ?>
     </div> <!-- .blog-wrapper -->
     <?php Weapon::fire('cargo_after'); ?>

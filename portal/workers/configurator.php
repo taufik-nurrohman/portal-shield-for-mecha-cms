@@ -4,25 +4,26 @@
 $colors = array(
     0 => '#222222',
     1 => '#333333',
-    2 => '#E3E3DB',
-    3 => '#FFFFFF',
-    4 => '#EDF2F2',
-    5 => '#E8F0F0',
-    6 => '#D8E0E3',
-    7 => '#D1D8DB',
-    8 => '#AABCD1',
-    9 => '#98ADC6',
-    10 => '#839BB4',
-    11 => '#8698AD',
-    12 => '#6C7E95',
-    13 => '#4B5562'
+    2 => '#BBBBBB',
+    3 => '#E3E3DB',
+    4 => '#FFFFFF',
+    5 => '#EDF2F2',
+    6 => '#E8F0F0',
+    7 => '#D8E0E3',
+    8 => '#D1D8DB',
+    9 => '#AABCD1',
+    10 => '#98ADC6',
+    11 => '#839BB4',
+    12 => '#8698AD',
+    13 => '#6C7E95',
+    14 => '#4B5562'
 );
 
 $c = Mecha::A($config->states->shield);
 
 $s = "";
 foreach($colors as $k => $v) {
-    $s .= Form::color('color[' . $k . ']', $c['color'][$k], $v) . ' ';
+    $s .= Form::color('color[' . $k . ']', isset($c['color'][$k]) ? $c['color'][$k] : $v) . ' ';
 }
 
 ?>

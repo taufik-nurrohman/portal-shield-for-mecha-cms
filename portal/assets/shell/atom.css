@@ -204,13 +204,7 @@ fieldset[disabled] .btn {
 .btn-small,
 .input-small,
 .select-small,
-.textarea-small {
-  padding:.6261180679785331em .7155635062611807em;
-  font-size:86%;
-}
-
-.btn-small {padding:.6261180679785331em .8944543828264758em}
-.select-small {padding:.5366726296958855em .6261180679785331em}
+.textarea-small {font-size:86%}
 .textarea-small {line-height:normal}
 
 input[type="checkbox"],
