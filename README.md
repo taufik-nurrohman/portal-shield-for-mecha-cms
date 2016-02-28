@@ -1,13 +1,9 @@
-Title: Portal
-Author: Taufik Nurrohman
-URL: http://latitudu.com
-Version: 1.0.0
-
-====
+Portal Shield for Mecha CMS
+===========================
 
 > Advanced shield for daily news blog genre.
 
-#### Features
+### Features
 
  - Mobile layout support
  - Advanced layout configurator
@@ -17,4 +13,14 @@ Version: 1.0.0
  - Email subscription form powered by [Feedburner](http://feedburner.com "Feedburner")
  - Post thumbnails in index pages.
 
-<!-- block:donate -->
+### Screen Captures
+
+#### Frontend
+
+![Frontend 1]()
+
+![Frontend 2]()
+
+#### Backend
+
+![Backend]()

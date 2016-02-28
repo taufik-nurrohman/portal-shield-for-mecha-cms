@@ -6,6 +6,7 @@
     <?php Shield::chunk('article.footer'); ?>
   </article>
   <?php Shield::chunk('pager'); ?>
+  <?php Shield::chunk('block.feedburner'); ?>
   <?php Shield::chunk('comments'); ?>
 </div>
 <?php Shield::chunk('footer'); ?>

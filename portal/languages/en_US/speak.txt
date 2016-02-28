@@ -1,7 +1,31 @@
 shield_portal:
   title:
+    share: Share:
     palette: Palettes
+    corner_1: Rounded Corners
     font_1: Body Font
     font_2: Title Font
     text_size_1: Text Size
     text_size_2: Main Text Size
+    background_image_1: Header Image
+    background_repeat:
+      0: No Repeat
+      1: Repeat
+      2: Repeat Horizontally
+      3: Repeat Vertically
+    background_position:
+      x:
+        0: Center
+        1: Left
+        2: Right
+      y:
+        0: Middle
+        1: Top
+        2: Bottom
+    css_1: Extra <abbr title="Cascading Style Sheet">CSS</abbr>
+    feed_id_1: Feedburner ID
+    feed_form_title: Email Subscription
+    feed_form_input: Enter your email address…
+    feed_form_button: Subscribe
+  description:
+    feed_id_1: For <code>http://feeds.feedburner.com/{{ID}}</code>

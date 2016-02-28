@@ -5,4 +5,16 @@ Version: 1.0.0
 
 ====
 
-> ...
+> Tameng tingkat lanjut untuk gaya blog berita harian.
+
+#### Features
+
+ - Dukungan tampilan seluler
+ - Konfigurator tampilan tingkat lanjut
+ - 3 kolom konten blog
+ - 4 kolom _footer_ blog
+ - Tombol berbagi sosial bawaan
+ - Formulir berlangganan email diberdayakan oleh [Feedburner](http://feedburner.com "Feedburner")
+ - Gambar mini pada halaman indeks.
+
+<!-- block:donate -->

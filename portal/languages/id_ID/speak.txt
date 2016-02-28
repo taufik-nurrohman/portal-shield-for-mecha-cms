@@ -1,7 +1,32 @@
 shield_portal:
   title:
+    share: Berbagi:
     palette: Warna
+    corner_1: Tepi Melingkar
     font_1: Fon Tubuh
     font_2: Fon Judul
     text_size_1: Ukuran Teks
     text_size_2: Ukuran Teks Utama
+    background_image_1: Gambar Kop
+    background_repeat:
+      0: Jangan Gandakan
+      1: Gandakan
+      2: Gandakan Secara Horizontal
+      3: Gandakan Secara Vertikal
+    background_position:
+      x:
+        0: Tengah
+        1: Kiri
+        2: Kanan
+    background_position:
+      y:
+        0: Tengah
+        1: Atas
+        2: Bawah
+    css_1: <abbr title="Cascading Style Sheet">CSS</abbr> Tambahan
+    feed_id_1: ID Feedburner
+    feed_form_title: Berlangganan Email
+    feed_form_input: Masukkan alamat email…
+    feed_form_button: Berlangganan
+  description:
+    feed_id_1: Untuk <code>http://feeds.feedburner.com/{{ID}}</code>
