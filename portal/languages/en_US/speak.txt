@@ -23,9 +23,9 @@ shield_portal:
         1: Top
         2: Bottom
     css_1: Extra <abbr title="Cascading Style Sheet">CSS</abbr>
-    feed_id_1: Feedburner ID
+    feed_id_1: FeedBurner ID
     feed_form_title: Email Subscription
     feed_form_input: Enter your email address…
     feed_form_button: Subscribe
   description:
-    feed_id_1: For <code>http://feeds.feedburner.com/{{ID}}</code>
+    feed_id_1: For <code>http://feeds.feedburner.com/{{id}}</code>

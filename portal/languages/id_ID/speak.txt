@@ -24,9 +24,9 @@ shield_portal:
         1: Atas
         2: Bawah
     css_1: <abbr title="Cascading Style Sheet">CSS</abbr> Tambahan
-    feed_id_1: ID Feedburner
+    feed_id_1: ID FeedBurner
     feed_form_title: Berlangganan Email
     feed_form_input: Masukkan alamat email…
     feed_form_button: Berlangganan
   description:
-    feed_id_1: Untuk <code>http://feeds.feedburner.com/{{ID}}</code>
+    feed_id_1: Untuk <code>http://feeds.feedburner.com/{{id}}</code>

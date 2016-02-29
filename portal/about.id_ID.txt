@@ -14,7 +14,7 @@ Version: 1.0.0
  - 3 kolom konten blog
  - 4 kolom _footer_ blog
  - Tombol berbagi sosial bawaan
- - Formulir berlangganan email diberdayakan oleh [Feedburner](http://feedburner.com "Feedburner")
+ - Formulir berlangganan email diberdayakan oleh [FeedBurner](https://feedburner.google.com "Google FeedBurner")
  - Gambar mini pada halaman indeks.
 
 <!-- block:donate -->
