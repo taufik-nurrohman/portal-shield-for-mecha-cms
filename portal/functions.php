@@ -20,7 +20,7 @@ Filter::add('chunk:output', function($content, $path) use($config, $speak) {
     }
     if($name === 'article.body.index') {
         if(strpos($content, ' class="fi-link"') === false) {
-            return $content . '<p><a class="fi-link btn" href="' . $s->url . '">' . $speak->read_more . '</a></p>';
+            return $content . '<p><a class="fi-link btn" href="' . $s->url . '#' . sprintf($config->excerpt->id, $s->id) . '">' . $speak->read_more . '</a></p>';
         } else {
             return str_replace(' class="fi-link"', ' class="fi-link btn"', $content);
         }

@@ -5,6 +5,9 @@
   <?php Shield::lot(array('article' => $article)); ?>
   <article class="post post-index" id="post-<?php echo $article->id; ?>">
     <?php Shield::chunk('article.header.index'); ?>
+    <!-- begin: post thumbnail -->
+    <!-- Show post thumbnail when manual post excerpt is empty -->
+    <?php if( ! $article->excerpt): ?>
     <figure class="post-image">
       <?php if($article->image): ?>
         <?php if(Plugin::exist('thumbnail')): ?>
@@ -21,6 +24,8 @@
         <span role="image"><i class="fa fa-image"></i></span>
       <?php endif; ?>
     </figure>
+    <?php endif; ?>
+    <!-- end: post thumbnail -->
     <?php Shield::chunk('article.body.index'); ?>
     <?php Shield::chunk('article.footer'); ?>
   </article>
