@@ -14,7 +14,7 @@ Config::set(array(
 Filter::add('chunk:output', function($content, $path) use($config, $speak) {
     $name = File::N($path);
     $s = Shield::lot('article');
-    // Add search for to the header
+    // Add search form to the header
     if($name === 'block.header' && ! Guardian::happy()) {
         return str_replace('</header>', Widget::search() . '</header>', $content);
     }
@@ -35,24 +35,29 @@ Filter::add('chunk:output', function($content, $path) use($config, $speak) {
 Config::set($config->page_type . '_fields_exclude', array('content', 'content_raw'));
 
 // Add social button(s)
+function shield_portal_do_social_button($post) {
+    global $config;
+    $url = urlencode($post->url);
+    $title = urlencode(Text::parse($post->title, '->text'));
+    $description = urlencode(Text::parse($post->description, '->text'));
+    $social = array(
+        'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=' . $url,
+        'twitter' => 'https://twitter.com/intent/tweet?text=' . $description . '&amp;url=' . $url,
+        'google-plus' => 'https://plusone.google.com/_/+1/confirm?url=' . $url . '&amp;title=' . $title,
+        'pinterest-p' => 'https://www.pinterest.com/pin/create/button?url=' . $url . '&amp;description=' . $description,
+        'linkedin' => 'http://www.linkedin.com/shareArticle?mini=true&amp;url=' . $url . '&amp;title=' . $title . '&amp;summary=' . $description . '&amp;source=' . urlencode($config->url)
+    );
+    echo '<p class="social-button-group"><strong>' . Config::speak('shield_portal.title.share') . '</strong> ';
+    foreach($social as $k => $v) {
+        echo '<a class="social-button social-button-' . $k . '" href="' . $v . '" target="_blank"><i class="fa fa-' . $k . '"></i></a>';
+    }
+    echo '</p>';
+}
 if($config->is->post) {
-    Weapon::add(array('article_header', 'page_header'), function($post) use($config) {
-        $url = urlencode($post->url);
-        $title = urlencode(Text::parse($post->title, '->text'));
-        $description = urlencode(Text::parse($post->description, '->text'));
-        $social = array(
-            'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=' . $url,
-            'twitter' => 'https://twitter.com/intent/tweet?text=' . $description . '&amp;url=' . $url,
-            'google-plus' => 'https://plusone.google.com/_/+1/confirm?url=' . $url . '&amp;title=' . $title,
-            'pinterest-p' => 'https://www.pinterest.com/pin/create/button?url=' . $url . '&amp;description=' . $description,
-            'linkedin' => 'http://www.linkedin.com/shareArticle?mini=true&amp;url=' . $url . '&amp;title=' . $title . '&amp;summary=' . $description . '&amp;source=' . urlencode($config->url)
-        );
-        echo '<p class="social-button-group"><strong>' . Config::speak('shield_portal.title.share') . '</strong> ';
-        foreach($social as $k => $v) {
-            echo '<a class="social-button social-button-' . $k . '" href="' . $v . '" target="_blank"><i class="fa fa-' . $k . '"></i></a>';
-        }
-        echo '</p>';
+    $filters = Mecha::walk(glob(POST . DS . '*', GLOB_NOSORT | GLOB_ONLYDIR), function($v) {
+        return File::B($v) . '_header';
     });
+    Weapon::add($filters, 'shield_portal_do_social_button');
 }
 
 // Custom appearance
