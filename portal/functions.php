@@ -64,10 +64,11 @@ if($config->is->post) {
 Weapon::add('shell_after', function() use($config) {
     $c = Mecha::A(Config::get('states.shield'));
     $css = '
-body {
+html {
   background-color:' . $c['color'][7] . ';
   font-family:' . strip_tags($c['font_family'][0]) . ';
   font-size:' . $c['font_size'][0] . 'px;
+  line-height:' . $c['line_height'][0] . '%;
   color:' . $c['color'][0] . ';
 }
 a {color:' . $c['color'][13] . '}
@@ -139,7 +140,10 @@ input[type="submit"]:active,
   background-color:' . $c['color'][4] . ';
   border-color:' . $c['color'][8] . ';
 }
-.post {font-size:' . $c['font_size'][1] . 'px}
+.post {
+  font-size:' . $c['font_size'][1] . 'px;
+  line-height:' . $c['line_height'][0] . '%;
+}
 .post-image span {
   background-color:' . $c['color'][8] . ';
   color:' . $c['color'][4] . ';

@@ -7,6 +7,8 @@ shield_portal:
     font_2: Fon Judul
     text_size_1: Ukuran Teks
     text_size_2: Ukuran Teks Utama
+    text_height_1: Jarak Baris
+    text_height_2: Jarak Baris Utama
     background_image_1: Gambar Kop
     background_repeat:
       0: Jangan Gandakan
@@ -30,3 +32,5 @@ shield_portal:
     feed_form_button: Berlangganan
   description:
     feed_id_1: Untuk <code>http://feeds.feedburner.com/{{id}}</code>
+    text_size: Dalam satuan piksel.
+    text_height: Dalam satuan persen.

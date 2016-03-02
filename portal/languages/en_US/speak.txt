@@ -7,6 +7,8 @@ shield_portal:
     font_2: Title Font
     text_size_1: Text Size
     text_size_2: Main Text Size
+    text_height_1: Line Spacing
+    text_height_2: Main Line Spacing
     background_image_1: Header Image
     background_repeat:
       0: No Repeat
@@ -29,3 +31,5 @@ shield_portal:
     feed_form_button: Subscribe
   description:
     feed_id_1: For <code>http://feeds.feedburner.com/{{id}}</code>
+    text_size: In pixel unit.
+    text_height: In percent unit.
