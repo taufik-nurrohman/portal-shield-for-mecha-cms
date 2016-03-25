@@ -10,9 +10,9 @@
     <?php if( ! $article->excerpt): ?>
     <figure class="post-image">
       <?php if($article->image): ?>
+        <?php $s = (array) $config->states->shield->font_size; ?>
+        <?php $s = round($s[0] * 7); ?>
         <?php if(Plugin::exist('thumbnail')): ?>
-          <?php $s = (array) $config->states->shield->font_size; ?>
-          <?php $s = round($s[0] * 7); ?>
           <?php $article->image = str_replace(File::url(ASSET) . '/', $config->url . '/t/' . $s . '/' . $s . '/', $article->image); ?>
         <?php endif; ?>
         <?php if($article->image === Image::placeholder()): ?>

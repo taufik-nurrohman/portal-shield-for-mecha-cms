@@ -286,6 +286,7 @@ input[type="submit"]:active,
   width:25%;
 }
 .blog-footer-grid .widget-wrapper {margin:0 1em}
+.blog-footer-grid .widget-wrapper + .widget-wrapper {margin-top:2em}
 
 /* @post */
 .post-image,
@@ -385,7 +386,6 @@ input[type="submit"]:active,
     margin-right:0;
     margin-left:0;
   }
-  .blog-footer-grid + .blog-footer-grid {margin-top:2em}
   .blog-wrapper .toc-block {
     float:none;
     width:auto;
