@@ -378,6 +378,25 @@ input[type="submit"]:active,
   .blog-sidebar-left-is-visible .blog-main {margin-left:18em !important}
   .blog-sidebar-right-is-visible .blog-main {margin-right:18em !important}
 }
+@media (max-width:36.25em) {
+  .grid-group {
+    margin-right:0;
+    margin-left:0;
+  }
+  .grid {
+    float:none;
+    display:block;
+    width:auto;
+    margin:0;
+    padding:0;
+    text-align:inherit;
+  }
+  .grid.form-label {
+    line-height:inherit;
+    margin-bottom:1.3846153846153846em;
+  }
+  .grid:empty {display:none}
+}
 @media (max-width:28.125em) {
   .blog-footer-grid {
     float:none;
